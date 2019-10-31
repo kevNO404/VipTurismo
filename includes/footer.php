@@ -44,20 +44,6 @@
 					}
 				}
 
-		/*function mascaraCel(){
-
-		var celular= document.getElementById('telefone').value;
-			if(celular.length==1){
- 			document.getElementById('telefone').value ='(' + celular;
-  			}
-			else if (celular.length==3){
- 			document.getElementById('telefone').value = celular +')';
-			}
-			else if (celular.length==9){
- 			document.getElementById('telefone').value = celular +'-';
-			}
-		}*/
-
 		$(document).ready(function() {
 			$("#telefone").mask("(99)99999-9999");
 		});
