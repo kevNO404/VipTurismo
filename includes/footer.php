@@ -44,7 +44,7 @@
 					}
 				}
 
-		function mascaraCel(){
+		/*function mascaraCel(){
 
 		var celular= document.getElementById('telefone').value;
 			if(celular.length==1){
@@ -56,21 +56,11 @@
 			else if (celular.length==9){
  			document.getElementById('telefone').value = celular +'-';
 			}
-		}
-			
-		function mascaraCpf(){
-   			var cpf = document.getElementById('cpf').value;
-    		if(cpf.length==3){
-     		document.getElementById('cpf').value = cpf +'.';
-			}
-    		else if(cpf.length==7){
-     		document.getElementById('cpf').value = cpf +'.';
-			}
-    		else if (cpf.length==11){
-     		document.getElementById('cpf').value = cpf +'-';
-			max.length == 14;
-			}    
-		}
+		}*/
+
+		$(document).ready(function() {
+			$("#telefone").mask("(99)99999-9999");
+		});
 
 </script>
 	</body>
