@@ -15,7 +15,7 @@ include 'includes/header.php';
 
 							<!-- Form -->
 								<section>
-									<form method="post" action="cadCliente.php" name="cadCliente">
+									<form method="post" action="cadCliente.php" id="cadCliente" name="cadCliente">
 										<div class="row uniform">
 											<div class="6u 12u(3)">
 											<label for="">Nome:</label>
@@ -23,12 +23,12 @@ include 'includes/header.php';
 											</div>
 											<div class="6u 12u(3)">
 											<label for="">Telefone:</label>
-												<input type="text" name="telefone" id="telefone" value="" placeholder="(**)*****-****" onKeypress="mascaraCel();" 
+												<input type="text" name="telefone" required="required" id="telefone" value="" placeholder="(**)*****-****" onKeypress="mascaraCel();" 
 												maxlength="14">
 											</div>
 											<div class="6u 12u(3)">
 											<label for="">Email:</label>
-												<input type="email" name="email" id="email" required="required" value="" placeholder="Example@email.com" />
+												<input type="email" name="email" id="email" required="required" placeholder="Example@email.com" />
 											</div>
 											<div class="6u 12u(3)">
 											<label for="">Cpf:</label>
@@ -36,11 +36,11 @@ include 'includes/header.php';
 											</div>
 											<div class="6u 12u(3)">
 											<label for="">Observações:</label>
-												<input type="text" name="obs" id="obs" value='' placeholder="Observações">
+												<textarea type="text" name="obs" id="obs" value='' placeholder="Observações"></textarea>
 											</div>
 										</div>
 												<ul class="actions">
-													<li style="margin-top: 2%;"><input name="cadastrar" type="submit" value="Cadastrar" /></li>
+													<li style="margin-top: 2%;"><input name="cadastrar" type="submit" value="Cadastrar"/></li>
 													<li style="margin-top: 2%;"><input type="reset" value="Apagar" class="alt" /></li>
 												</ul>
 											</div>
@@ -48,7 +48,6 @@ include 'includes/header.php';
 									</form>
 								</section>
 							</div>
-
 <?php
 include 'includes/footer.php';
 ?>

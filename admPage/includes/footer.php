@@ -12,6 +12,7 @@
 			
 			<script src="../js/jquery.min.js"></script>
 			<script src="../js/jquery.dropotron.min.js"></script>
+			<script src="../js/jquery.maskInput.js"></script>
 			<script src="../js/jquery.scrollgress.min.js"></script>
 			<script src="../js/jquery.scrolly.min.js"></script>
 			<script src="../js/jquery.slidertron.min.js"></script>
@@ -21,32 +22,11 @@
 
 	<!--mascaras-->
 			<script>
-		function mascaraCel(){
-
-		var celular= document.getElementById('telefone').value;
-			if(celular.length==1){
- 			document.getElementById('telefone').value ='(' + celular;
-  			}
-			else if (celular.length==3){
- 			document.getElementById('telefone').value = celular +')';
-			}
-			else if (celular.length==9){
- 			document.getElementById('telefone').value = celular +'-';
-			}
-		}
-			
-		function mascaraCpf(){
-   		var cpf = document.getElementById('cpf').value;
-    	if(cpf.length==3){
-     	document.getElementById('cpf').value = cpf +'.';
-		}
-    	else if(cpf.length==7){
-     	document.getElementById('cpf').value = cpf +'.';
-		}
-    	else if (cpf.length==11){
-     	document.getElementById('cpf').value = cpf +'-';
-		}    
-		}
+		
+		$(document).ready(function(){
+			$("#telefone").mask("(99)99999-9999");
+			$("#cpf").mask("999.999.999-99");
+		});
 
 		function mascaraValor() {
   		var elemento = document.getElementById('valor');
@@ -63,5 +43,6 @@
   		elemento.value = 'R$' + valor;
 		}
 </script>
+
 	</body>
 	</html>

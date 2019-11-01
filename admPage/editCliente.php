@@ -50,7 +50,7 @@
 											</div>
 											<div class="6u 12u(3)">
 											<label for="">Observações:</label>
-												<input type="text" name="obs" id="obs" value='<?=$linha["obs"]?>' placeholder="Observações">
+												<textarea type="text" name="obs" id="obs" value='<?=$linha["obs"]?>' placeholder="Observações"></textarea>
 											</div>
 										</div>
 												<ul class="actions">
